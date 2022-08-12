@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://SingleVarTweenAnim.gd" type="Script" id=1]
+
+[node name="SingleVarTweenAnim" type="Tween"]
+script = ExtResource( 1 )
+loop = true
+times = [ 0.0, 0.0, 0.0 ]
+
+[connection signal="tween_completed" from="." to="." method="_on_Tween_tween_completed"]
